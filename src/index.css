@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sun {
+  animation: sun 60s linear infinite;
+}
+
+@keyframes sun {
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.comet {
+  animation: comet 360s linear infinite;
+}
+
+@keyframes comet {
+  from {
+    transform: translate(100%, 0%);
+  }
+  to {
+    transform: translate(0%, 100%);
+  }
+}
